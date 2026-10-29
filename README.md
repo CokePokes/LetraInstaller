@@ -189,39 +189,6 @@ Letra checks for a new release when it opens (at most every few hours). When one
 
 ---
 
-## Building from source
-
-1. Clone the repository and open `letrainstaller.xcodeproj` in Xcode 16 or later.
-2. Install build tools:
-   ```bash
-   brew install cmake gperf ldid
-   ```
-3. *(Optional — enables Get IPA from Telegram)*
-   - Create `letrainstaller/LETelegramSecrets.h` with your own API credentials from [my.telegram.org](https://my.telegram.org):
-     ```objc
-     #define LE_TELEGRAM_API_ID 12345678
-     #define LE_TELEGRAM_API_HASH @"your_api_hash"
-     ```
-   - Build TDLib for iOS with `Scripts/build-tdlib-ios.sh` and place `libtdjson.dylib` in `ThirdParty/TDLib/`.
-4. Build the `letrainstaller` scheme.
-
-### Publishing a release
-
-1. Raise **Version** or **Build** under the target's **General → Identity** in Xcode.
-2. Edit `ReleaseNotes.json` — these notes are shown in the update screen:
-   ```json
-   {
-     "mandatory": false,
-     "changes": [
-       "What changed in this release."
-     ]
-   }
-   ```
-   Set `"mandatory": true` to require the update.
-3. Build, then upload the IPA as `letrainstaller.ipa` to the release Letra checks for updates.
-
----
-
 ## Credits
 
 - [TrollStore](https://github.com/opa334/TrollStore) by opa334
