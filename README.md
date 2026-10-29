@@ -48,9 +48,9 @@
 
 1. Download `letrainstaller.ipa` (or `.tipa`) from the [latest release](../../releases/latest).
 2. Open it with TrollStore, or sideload it with your preferred method.
-3. Import a lockdown pairing file in Letra Settings from [iLoader](https://iloader.app/) or [idevice_pair](https://github.com/jkcoxson/idevice_pair) if < iOS 17.4 on a computer.
-4. If running iOS 17.4+ use [idevice_pair](https://github.com/jkcoxson/idevice_pair) to get the RPPairing file and import in Letra Settings.
-5. Also if running iOS 17.4+ copy your UDID for entering later in Letra Settings.
+3. Import a **Lockdown** pairing file in Letra Settings from [iLoader](https://iloader.app/) or [idevice_pair](https://github.com/jkcoxson/idevice_pair) if < iOS 17.4 on a computer.
+4. If running iOS 17.4+ use [idevice_pair](https://github.com/jkcoxson/idevice_pair) to get the **RPPairing** file and import in Letra Settings.
+5. Also if running iOS 17.4+ copy your **UDID** for entering later in Letra Settings.
 
 After that, Letra keeps itself up to date — see [Updates](#updates).
 
